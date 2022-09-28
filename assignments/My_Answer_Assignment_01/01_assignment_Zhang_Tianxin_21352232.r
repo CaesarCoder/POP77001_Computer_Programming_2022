@@ -111,7 +111,7 @@ tab_edu # 0, 140; 1, 247; 2, 267; 3, 181; 4, 138. Secondary
 edu_REORDER <- factor(tab_edu, levels = c("Secondary Education", 
                                          "No formal education", 
                                          "Primary Education",
-                                         "College", 
+                                         "College Education", 
                                          "Post-graduate Education"))
 edu_REORDER
 
@@ -132,7 +132,7 @@ length(char_1) # 6
 
 length(char_2) # 7
 
-char_1_mod <- append(char_1, "0") # add "0" at the end, same length of char_1 
+char_1_mod <- append(char_1, "0") # add "0" at the end, same length as char_2 
 # and char_2
 num_tra <- 0
 num_tra  <- ifelse(char_2 == char_1_mod, num_tra, num_tra +1)
