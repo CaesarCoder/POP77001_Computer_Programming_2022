@@ -32,12 +32,15 @@ SDA
 
 #  Odd rows from the matrix M
 
-MC1 <- l$M[, 1]
+MC1 <- l$M
+MC1
 
-MROWS_ODD <- 1$M[ ,]
+MROWS_ODD <- seq_len(nrow(MC1)) %% 2   
 
+MROWS_ODD
 
-
+MC1_ODDROWS <- MC1[MROWS_ODD == 1, ]    
+MC1_ODDROWS # Odd rows from the Matrix M
 
 # E2
 
@@ -86,11 +89,10 @@ books <- c(
 NCB <- nchar(books)
 NCB # 9 7 13 13 20 26
 
-mean(NCB)
-
-PERC <- * 100
-
-
+NCBOT <- mean(NCB > 10)*100
+NCBOT
+# the percentage of book titles in the vector below that have more than 10 
+# characters in them: 66.67%
 
 # E4
 set.seed(2022)
@@ -125,9 +127,15 @@ char_2
 # Exercise 5:
 
 # Your code goes here
-char_1_fac <- as.factor(char_1)
-char_2_fac <- as.factor(char_2)
-num_tra <- 0
-num_tra  <- ifelse(char_2_fac == char_1_fac, char_2_fac, num_tra +1)
 
+length(char_1) # 6
+
+length(char_2) # 7
+
+char_1_mod <- append(char_1, "0") # add "0" at the end, same length of char_1 
+# and char_2
+num_tra <- 0
+num_tra  <- ifelse(char_2 == char_1_mod, num_tra, num_tra +1)
+sum(num_tra) # 3
+# answer: 
 
