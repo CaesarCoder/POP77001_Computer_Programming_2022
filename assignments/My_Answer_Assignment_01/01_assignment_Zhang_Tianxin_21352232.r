@@ -56,7 +56,6 @@ vec_nu<- as.numeric(vec)
 str(vec)
 CO <- which(vec == "o")  # "o"
 str(CO) # there are 40 "o" in total, 40%
-ifelse()
 vec_NEW <- ifelse(vec == "o",0, vec)
 vec_NEW
 
