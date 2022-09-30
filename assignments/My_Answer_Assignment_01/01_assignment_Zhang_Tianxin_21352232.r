@@ -118,7 +118,9 @@ educ_RELE
 
 table(educ_RELE)
 
-## Get the relevel() function here: 
+##Get the levels() function here: 
+# https://www.marsja.se/how-to-rename-factor-levels-in-r-dplyr/
+##Get the relevel() function here: 
 # https://stat.ethz.ch/R-manual/R-devel/library/stats/html/relevel.html 
 
 
