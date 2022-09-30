@@ -60,16 +60,11 @@ vec_NEW <- ifelse(vec == "o",0, vec)
 vec_NEW
 
 
-
-
-
 ## Answer: its type is character vector
 # what proportion of the vector elements did we fail to convert correctly? 40%
 
-
-
-
-
+## Get the which() function here: 
+# https://www.r-bloggers.com/2017/03/which-function-in-r/
 
  
 books <- c(
@@ -92,6 +87,8 @@ NCBOT <- mean(NCB > 10)*100
 NCBOT
 # the percentage of book titles in the vector below that have more than 10 
 # characters in them: 66.67%
+# Get the mean() function here:
+# https://www.r-bloggers.com/2016/07/proportions-with-mean/ 
 
 # E4
 set.seed(2022)
@@ -105,17 +102,27 @@ educ <- ifelse(educ > 4, 4, educ)
 educ_FC <- as.factor(educ)
 educ_FC
 tab_edu <- table(educ_FC) 
-tab_edu # 0, 140; 1, 247; 2, 267; 3, 181; 4, 138. Secondary 
-# education coded as 2 is the most frequent 
-edu_REORDER <- factor(tab_edu, levels = c("Secondary Education", 
-                                         "No formal education", 
-                                         "Primary Education",
-                                         "College Education", 
-                                         "Post-graduate Education"))
-edu_REORDER
+tab_edu # 0, 140; 1, 274; 2, 267; 3, 181; 4, 138. Secondary 
+# education coded as 1 is the most common
+
+levels(educ_FC) <- c("No formal education", 
+                     "Primary Education",
+                     "Secondary Education",
+                     "College Education", 
+                     "Post-graduate Education")
+educ_FC
+
+educ_RELE <- relevel(educ_FC, ref = "Primary Education")
+
+educ_RELE
+
+table(educ_RELE)
+
+## Get the relevel() function here: 
+# https://stat.ethz.ch/R-manual/R-devel/library/stats/html/relevel.html 
 
 
-# E5
+--# E5
 char_1 <- unlist(strsplit("kitten", split = ""))
 char_2 <- unlist(strsplit("sitting", split = ""))
 
