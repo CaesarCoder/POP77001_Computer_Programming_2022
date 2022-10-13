@@ -1,0 +1,16 @@
+# 6 Data Wrangling in R
+
+Working with data is at the centre of programming in R. In addition to core functionality of base R, many new packages, such as `tidyverse` collection provide advanced data manipulation facilities and enhanced experience of working with tabular data. In this week we will focus on data frame and its tidyverse cousin tibble. We will also discuss formats of data storage and functions for data I/O and descriptive analysis.
+
+## Required Readings
+
+- Wickham & Grolemund. Chapters [7: Tibbles](https://r4ds.had.co.nz/tibbles.html), [8: Data Import](https://r4ds.had.co.nz/data-import.html), [9: Tidy Data](https://r4ds.had.co.nz/tidy-data.html);
+
+## Additional Readings
+
+- Peng Chs 13: Managing Data Frames, 18: Loop Functions;
+
+## Tutorial
+
+- Data input and output
+- Working with data in base R and tidyverse
