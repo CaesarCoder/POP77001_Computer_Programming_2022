@@ -1,17 +1,27 @@
 # 10 Data Wrangling in Python
 
+<div id="buttons">
+<a class="btn btn-primary btn-lg" role="button" href="lectures/10_week.html">Lecture Slides (html)</a>
+<a class="btn btn-info btn-lg" role="button" href="https://github.com/ASDS-TCD/POP77001_Computer_Programming_2022/blob/main/lectures/10_week.pdf">Lecture Slides (pdf)</a>
+<a class="btn btn-secondary btn-lg" role="button" href="https://github.com/ASDS-TCD/POP77001_Computer_Programming_2022/blob/main/lectures/10_week.ipynb">Lecture Slides (ipynb)</a>
+<br>
+<br>
+<a class="btn btn-success btn-lg" role="button" href="https://github.com/ASDS-TCD/POP77001_Computer_Programming_2022/blob/main/tutorials/10_week.ipynb">Tutorial Exercise (ipynb)</a>
+<a class="btn btn-info btn-lg" role="button" href="https://github.com/ASDS-TCD/POP77001_Computer_Programming_2022/blob/main/tutorials/10_week.pdf">Tutorial Exercise (pdf)</a>
+<a class="btn btn-secondary btn-lg" role="button" href="tutorials/10_week.html">Tutorial Exercise (html)</a>
+</div>
 ---
 
 This week we will turn from broader programming and software engineering concepts to practical approaches of working with data in Python. In particular, we will focus on `pandas`, a versatile library for data analysis, which often serves as the first building block in many data-science pipelines.
 
 ## Required Readings
 
-- McKinney Chs 5: Getting Started with Pandas, 6: Data Loading, Storage and File Formats, 7: Data Cleaning and Preparation, 8: Data Wrangling: Join, Combine and Reshape;
+- McKinney Chs 4: [NumPy Basics](https://wesmckinney.com/book/numpy-basics.html), [5: Getting Started with Pandas](https://wesmckinney.com/book/pandas-basics.html), [6: Data Loading, Storage and File Formats](https://wesmckinney.com/book/accessing-data.html), [7: Data Cleaning and Preparation](https://wesmckinney.com/book/plotting-and-visualization.html), [8: Data Wrangling: Join, Combine and Reshape](https://wesmckinney.com/book/data-wrangling.html);
 
 ## Additional Readings
 
 - Guttag Ch 23: Exploring Data with Pandas;
-- McKinney Ch 9: Plotting and Visualization;
+- McKinney Ch [9: Plotting and Visualization](https://wesmckinney.com/book/plotting-and-visualization.html);
 
 ## Tutorial
 
